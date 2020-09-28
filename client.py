@@ -1,6 +1,6 @@
 import socket
 
-port=13000
+port=##insert port here###
 
 s=socket.socket()
 s.connect(('127.0.0.1', port)) 
