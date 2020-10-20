@@ -22,10 +22,8 @@ namespace ConsoleApp1
             List<Socket> socketArr = new List<Socket>();
             List<Thread> threadArr = new List<Thread>();
             
-            //start the server and start the cleaner thread 
+            //start the server
             TcpListener server = connection.StartServer();
-            Thread clean = new Thread(() => thread.Cleaner(socketArr, threadArr));
-            clean.Start();
 
             while (true)
             {
